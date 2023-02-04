@@ -1,0 +1,132 @@
+body {
+  margin: 0px auto;
+  background-color: #1979a9;
+  max-width: 70%;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+  border-radius: 20px;
+  padding: 18px 18px;
+  background-color: #bad7e5;
+}
+
+.nav-link {
+  margin-right: 20px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 22px;
+}
+
+.nav-link a:hover {
+  color: #176d98;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+}
+
+.main-top {
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-image: url("promo_img.png");
+  min-height: 300px;
+  color: whitesmoke;
+  border: 1px solid #b9c9d7;
+}
+
+.main-top h1 {
+  font-weight: 900;
+  font-size: 34px;
+}
+
+.main-top p {
+  margin-top: 50px;
+  max-width: 1024px;
+}
+
+.main-bottom article {
+  background-color: #bad7e5;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 30px 0px;
+}
+
+.main-bottom article:first-child {
+  margin-right: 24px;
+}
+
+.main-bottom article:nth-child(3) {
+  margin-left: 24px;
+}
+
+.main-bottom article img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 40px 0px;
+}
+
+.main-bottom article img:hover {
+  box-shadow: 10px 15px rgba(255, 255, 255, 0.6);
+}
+
+footer {
+  display: flex;
+  padding: 8px 28px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bad7e5;
+}
+
+footer div img {
+  width: 40px;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    max-width: 90%;
+  }
+
+  .main-bottom {
+    flex-direction: column;
+  }
+
+  .main-bottom article:first-child {
+    margin-right: 0px;
+  }
+
+  .main-bottom article:nth-child(3) {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  body {
+    max-width: 90%;
+  }
+}
